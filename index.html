@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>    
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 mx-auto mt-5 text-center">
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Entrez un pays</label>
+                    <input type="text" class="form-control" id="pays" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">Le pays doit être en anglais svp !</div>
+                  </div>
+                  <button type="submit" id="bouton" class="btn btn-primary">Valider</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 mx-auto mt-5">
+                <div id="resultat"></div>
+            </div>
+        </div>
+    </div>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="node_modules/axios/dist/axios.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
